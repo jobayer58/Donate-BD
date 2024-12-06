@@ -32,7 +32,7 @@
                     </div>
                     <div class="flex items-center lg:gap-2 gap-2 mt-5 mr-9">
                         <img class="lg:w-[32px] lg:h-[32px] " src="assets/coin.png" alt="">
-                        <p class="lg:text-2xl items-center text-center"><span>50000 </span>BDT</p>
+                        <p class="lg:text-2xl items-center text-center"><span id="bank-account">50000 </span>BDT</p>
                     </div>
                 </ul>
             </div>
@@ -57,7 +57,7 @@
                 <!-- tk -->
                  <div class="lg:flex flex bg-[#1111110D] w-[140px] h-[60px] rounded-lg items-center gap-1 justify-center ml-24 lg:ml-0">
                     <img src="assets/coin.png" alt="">
-                    <p><span>10500 </span>BDT</p>     
+                    <p><span id="donate-amount-1">10500 </span>BDT</p>     
                  </div>
                  <!-- text -->
                   <div class="space-y-5">
@@ -66,12 +66,28 @@
                   </div>
                   <!-- input -->
                    <div class="py-3">
-                    <input class="border-[1px] lg:h-[70px] lg:w-[700px] h-[70px] w-[300px] px-4 rounded-lg text-xl" type="number" placeholder="Write Donation Amount">
+                    <input id="donate-input-1" class="border-[1px] lg:h-[70px] lg:w-[700px] h-[70px] w-[300px] px-4 rounded-lg text-xl" type="number" placeholder="Write Donation Amount">
                    </div>
                    <!-- button -->
-                    <div>
-                        <button class="btn border-[1px] lg:h-[70px] h-[70px] w-[300px] lg:w-[700px] text-2xl bg-[#B4F461]">Donate now</button>
-                    </div>
+                   <div class="card-actions">
+                    <!-- Open the modal using ID.showModal() method -->
+                    <button id="donate-now-1" class="btn border-[1px] lg:h-[70px] h-[70px] w-[300px] lg:w-[700px] text-2xl bg-[#B4F461] " onclick="my_modal_1.showModal()">Donate Now</button>
+                    <dialog id="my_modal_3" class="modal">
+                      <form method="dialog" class="modal-box">
+                        <div class=" items-center text-center h-[250px] space-y-7">
+                        <h1 class="text-4xl font-bold">Congrats!</h1>
+                        <img class="mx-56 h-[44px] w-[44px]" src="assets/coin.png" alt="">
+                        <p class="text-xl">You Have Donate For Humankind</p>
+                        <p class="text-2xl font-bold">successfully</p>
+                        </div>
+                        <div class="modal-action justify-center">
+                          <!-- if there is a button in form, it will close the modal -->
+                          <button class="btn">Close confirmation</button>
+                        </div>
+                      </form>
+                    </dialog>
+                    <!-- <button class="btn btn-active btn-link">Details</button> -->
+                  </div>
              </div>
          </div>
 
@@ -86,7 +102,7 @@
                 <!-- tk -->
                  <div class="lg:flex flex bg-[#1111110D] w-[140px] h-[60px] rounded-lg items-center gap-1 justify-center ml-24 lg:ml-0">
                     <img src="assets/coin.png" alt="">
-                    <p><span>3700 </span>BDT</p>     
+                    <p><span id="donate-amount-2">3700 </span>BDT</p>     
                  </div>
                  <!-- text -->
                   <div class="space-y-5">
@@ -95,12 +111,28 @@
                   </div>
                   <!-- input -->
                    <div class="py-2">
-                    <input class="border-[1px] lg:h-[70px] lg:w-[700px] h-[70px] w-[300px] px-4 rounded-lg text-xl" type="number" placeholder="Write Donation Amount">
+                    <input id="donate-input-2" class="border-[1px] lg:h-[70px] lg:w-[700px] h-[70px] w-[300px] px-4 rounded-lg text-xl" type="number" placeholder="Write Donation Amount">
                    </div>
                    <!-- button -->
-                    <div>
-                        <button class="btn border-[1px] lg:h-[70px] h-[70px] w-[300px] lg:w-[700px] text-2xl bg-[#B4F461]">Donate now</button>
-                    </div>
+                   <div class="card-actions">
+                    <!-- Open the modal using ID.showModal() method -->
+                    <button id="donate-now-2" class="btn border-[1px] lg:h-[70px] h-[70px] w-[300px] lg:w-[700px] text-2xl bg-[#B4F461] " onclick="my_modal_1.showModal()">Donate Now</button>
+                    <dialog id="my_modal_2" class="modal">
+                      <form method="dialog" class="modal-box">
+                        <div class=" items-center text-center h-[250px] space-y-7">
+                        <h1 class="text-4xl font-bold">Congrats!</h1>
+                        <img class="mx-56 h-[44px] w-[44px]" src="assets/coin.png" alt="">
+                        <p class="text-xl">You Have Donate For Humankind</p>
+                        <p class="text-2xl font-bold">successfully</p>
+                        </div>
+                        <div class="modal-action justify-center">
+                          <!-- if there is a button in form, it will close the modal -->
+                          <button class="btn">Close confirmation</button>
+                        </div>
+                      </form>
+                    </dialog>
+                    <!-- <button class="btn btn-active btn-link">Details</button> -->
+                  </div>
              </div>
          </div>
 
@@ -115,7 +147,7 @@
                 <!-- tk -->
                  <div class="lg:flex flex bg-[#1111110D] w-[140px] h-[60px] rounded-lg items-center gap-1 justify-center ml-24 lg:ml-0">
                     <img src="assets/coin.png" alt="">
-                    <p><span>8500 </span>BDT</p>     
+                    <p><span id="donate-amount-3">8500 </span>BDT</p>     
                  </div>
                  <!-- text -->
                   <div class="space-y-2">
@@ -124,12 +156,32 @@
                   </div>
                   <!-- input -->
                    <div class="py-1">
-                    <input class="border-[1px] lg:h-[70px] lg:w-[700px] h-[70px] w-[300px] px-4 rounded-lg text-xl" type="number" placeholder="Write Donation Amount">
+                    <input id="donate-input-3" class="border-[1px] lg:h-[70px] lg:w-[700px] h-[70px] w-[300px] px-4 rounded-lg text-xl" type="number" placeholder="Write Donation Amount">
                    </div>
                    <!-- button -->
-                    <div>
+                   <div class="card-actions">
+                    <!-- Open the modal using ID.showModal() method -->
+                    <button id="donate-now-3" class="btn border-[1px] lg:h-[70px] h-[70px] w-[300px] lg:w-[700px] text-2xl bg-[#B4F461] " onclick="my_modal_1.showModal()">Donate Now</button>
+                    <dialog id="my_modal_1" class="modal">
+                      <form method="dialog" class="modal-box">
+                        <div class=" items-center text-center h-[250px] space-y-7">
+                        <h1 class="text-4xl font-bold">Congrats!</h1>
+                        <img class="mx-56 h-[44px] w-[44px]" src="assets/coin.png" alt="">
+                        <p class="text-xl">You Have Donate For Humankind</p>
+                        <p class="text-2xl font-bold">successfully</p>
+                        </div>
+                        <div class="modal-action justify-center">
+                          <!-- if there is a button in form, it will close the modal -->
+                          <button class="btn">Close confirmation</button>
+                        </div>
+                      </form>
+                    </dialog>
+                    <!-- <button class="btn btn-active btn-link">Details</button> -->
+                  </div>
+
+                    <!-- <div>
                         <button class="btn border-[1px] lg:h-[70px] h-[70px] w-[300px] lg:w-[700px] text-2xl bg-[#B4F461]">Donate now</button>
-                    </div>
+                    </div> -->
              </div>
          </div>
 
@@ -139,6 +191,8 @@
 
         </div>
     </footer>
+    <script src="js/index.js"></script>
+    <script src="js/utilities.js"></script>
 </body>
 
 </html>
