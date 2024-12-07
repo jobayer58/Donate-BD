@@ -1,6 +1,12 @@
 document.getElementById('donate-now-1').addEventListener('click', function(){
     //    const inputDonate = parseFloat(document.getElementById('donate-input-1').value)
     const donateMoney = getPowerfulSystem('donate-input-1')
+    
+    if (isNaN(donateMoney) || donateMoney <= 0) {
+        alert('please valid me input number')
+        return;
+    }
+    
     const bankAccount = textTONumber('bank-account')
     const donateAmount = textTONumber('donate-amount-1')
     
@@ -10,11 +16,18 @@ document.getElementById('donate-now-1').addEventListener('click', function(){
     document.getElementById('bank-account').innerText = presentAmount
     document.getElementById('donate-amount-1').innerText = totalDonateAmount
 
+    document.getElementById('my_modal_1').showModal();
     
 })
 
 document.getElementById('donate-now-2').addEventListener('click',function(){
     const donateMoney = getPowerfulSystem('donate-input-2')
+
+    if (isNaN(donateMoney) || donateMoney <= 0) {
+        alert('please valid me input number')
+        return;
+    }
+
     const bankAccount = textTONumber('bank-account')
     const donateAmount = textTONumber('donate-amount-2')
 
@@ -24,11 +37,17 @@ document.getElementById('donate-now-2').addEventListener('click',function(){
     document.getElementById('bank-account').innerText = presentAmount
     document.getElementById('donate-amount-2').innerText = totalDonateAmount
 
-
+    document.getElementById('my_modal_2').showModal();
 })
 
 document.getElementById('donate-now-3').addEventListener('click',function(){
     const donateMoney = getPowerfulSystem('donate-input-3')
+
+    if (isNaN(donateMoney) || donateMoney <= 0) {
+        alert('please valid me input number')
+        return;
+    }
+
     const bankAccount = textTONumber('bank-account')
     const donateAmount = textTONumber('donate-amount-3')
 
@@ -38,6 +57,7 @@ document.getElementById('donate-now-3').addEventListener('click',function(){
     document.getElementById('bank-account').innerText = presentAmount
     document.getElementById('donate-amount-3').innerText = totalDonateAmount
 
+    document.getElementById('my_modal_3').showModal();
 
 })
 
