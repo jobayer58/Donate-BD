@@ -1,9 +1,14 @@
+// donation-1
 document.getElementById('donate-now-1').addEventListener('click', function () {
-    //    const inputDonate = parseFloat(document.getElementById('donate-input-1').value)
     const donateMoney = getPowerfulSystem('donate-input-1')
 
     if (isNaN(donateMoney) || donateMoney <= 0) {
-        alert('please valid me input number')
+        alert('Please donate your money.what you are doing makes no sense')
+        return;
+    }
+
+    if (donateMoney >= 50000) {
+        alert('you are going beyond your means')
         return;
     }
 
@@ -19,16 +24,28 @@ document.getElementById('donate-now-1').addEventListener('click', function () {
     // history
     const instantDonate = document.getElementById('instant-donate-1')
     instantDonate.innerText = donateMoney
-    
+
+    // current time
+    const currentTimeElement = document.getElementById('current-time-1')
+    const now = new Date();
+    const formattedTime = now.toString();
+    currentTimeElement.textContent = `Date: ${formattedTime}`
+
     document.getElementById('my_modal_1').showModal();
 
 })
 
+// donation-2
 document.getElementById('donate-now-2').addEventListener('click', function () {
     const donateMoney = getPowerfulSystem('donate-input-2')
 
     if (isNaN(donateMoney) || donateMoney <= 0) {
-        alert('please valid me input number')
+        alert('Please donate your money.what you are doing makes no sense')
+        return;
+    }
+
+    if (donateMoney >= 50000) {
+        alert('you are going beyond your means')
         return;
     }
 
@@ -45,14 +62,26 @@ document.getElementById('donate-now-2').addEventListener('click', function () {
     const instantDonate = document.getElementById('instant-donate-2')
     instantDonate.innerText = donateMoney
 
+    // current time
+    const currentTimeElement = document.getElementById('current-time-2')
+    const now = new Date();
+    const formattedTime = now.toString();
+    currentTimeElement.textContent = `Date: ${formattedTime}`
+
     document.getElementById('my_modal_2').showModal();
 })
 
+// donation-3
 document.getElementById('donate-now-3').addEventListener('click', function () {
     const donateMoney = getPowerfulSystem('donate-input-3')
 
     if (isNaN(donateMoney) || donateMoney <= 0) {
-        alert('please valid me input number')
+        alert('Please donate your money.what you are doing makes no sense')
+        return;
+    }
+
+    if (donateMoney >= 50000) {
+        alert('you are going beyond your means')
         return;
     }
 
@@ -69,6 +98,12 @@ document.getElementById('donate-now-3').addEventListener('click', function () {
     const instantDonate = document.getElementById('instant-donate-3')
     instantDonate.innerText = donateMoney
 
+    // current time
+    const currentTimeElement = document.getElementById('current-time-3')
+    const now = new Date();
+    const formattedTime = now.toString();
+    currentTimeElement.textContent = `Date: ${formattedTime}`
+
     document.getElementById('my_modal_3').showModal();
 
 })
@@ -84,6 +119,16 @@ historyTab.addEventListener('click', function () {
     donationTab.classList.add('border-[1px]', 'border-[#1111114D]')
 
     document.getElementById('donation-page').classList.add('hidden')
-    document.getElementById('history-but').classList.remove('hidden')
+    document.getElementById('history-page').classList.remove('hidden')
 
+})
+
+document.getElementById('donation').addEventListener('click',function(){
+    
+    document.getElementById('history-page').classList.add('hidden')
+    document.getElementById('donation-page').classList.remove('hidden')
+    document.getElementById('history').classList.remove('bg-[#B4F461]')
+    document.getElementById('history').classList.add('border-[1px]', 'border-[#1111114D]')
+    document.getElementById('donation').classList.add('bg-[#B4F461]')
+    document.getElementById('donation').classList.remove('border-[1px]', 'border-[#1111114D]')
 })
