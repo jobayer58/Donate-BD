@@ -31,6 +31,7 @@ document.getElementById('donate-now-1').addEventListener('click', function () {
     currentTimeElement.textContent = `Date: ${formattedTime}`
 
     document.getElementById('my_modal_1').showModal();
+    document.getElementById('donate-input-1').value = '';
 
 })
 
@@ -67,6 +68,7 @@ document.getElementById('donate-now-2').addEventListener('click', function () {
     currentTimeElement.textContent = `Date: ${formattedTime}`
 
     document.getElementById('my_modal_2').showModal();
+    document.getElementById('donate-input-2').value = '';
 })
 
 // donation-3
@@ -102,6 +104,7 @@ document.getElementById('donate-now-3').addEventListener('click', function () {
     currentTimeElement.textContent = `Date: ${formattedTime}`
 
     document.getElementById('my_modal_3').showModal();
+    document.getElementById('donate-input-3').value = '';
 
 })
 
