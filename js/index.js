@@ -14,16 +14,15 @@ document.getElementById('donate-now-1').addEventListener('click', function () {
 
     const bankAccount = textTONumber('bank-account')
     const donateAmount = textTONumber('donate-amount-1')
+    const instantDonate = textTONumber('instant-donate-1')
 
     const presentAmount = bankAccount - donateMoney
     const totalDonateAmount = donateAmount + donateMoney
+    const historyAmount = donateMoney + instantDonate
 
     document.getElementById('bank-account').innerText = presentAmount
     document.getElementById('donate-amount-1').innerText = totalDonateAmount
-
-    // history
-    const instantDonate = document.getElementById('instant-donate-1')
-    instantDonate.innerText = donateMoney
+    document.getElementById('instant-donate-1').innerText = historyAmount
 
     // current time
     const currentTimeElement = document.getElementById('current-time-1')
@@ -51,16 +50,15 @@ document.getElementById('donate-now-2').addEventListener('click', function () {
 
     const bankAccount = textTONumber('bank-account')
     const donateAmount = textTONumber('donate-amount-2')
+    const instantDonate = textTONumber('instant-donate-2')
 
     const presentAmount = bankAccount - donateMoney
     const totalDonateAmount = donateAmount + donateMoney
+    const historyAmount = donateMoney + instantDonate
 
     document.getElementById('bank-account').innerText = presentAmount
     document.getElementById('donate-amount-2').innerText = totalDonateAmount
-
-    // history
-    const instantDonate = document.getElementById('instant-donate-2')
-    instantDonate.innerText = donateMoney
+    document.getElementById('instant-donate-2').innerText = historyAmount
 
     // current time
     const currentTimeElement = document.getElementById('current-time-2')
@@ -87,16 +85,15 @@ document.getElementById('donate-now-3').addEventListener('click', function () {
 
     const bankAccount = textTONumber('bank-account')
     const donateAmount = textTONumber('donate-amount-3')
+    const instantDonate = textTONumber('instant-donate-3')
 
     const presentAmount = bankAccount - donateMoney
     const totalDonateAmount = donateAmount + donateMoney
+    const historyAmount = donateMoney + instantDonate
 
     document.getElementById('bank-account').innerText = presentAmount
     document.getElementById('donate-amount-3').innerText = totalDonateAmount
-
-    // history
-    const instantDonate = document.getElementById('instant-donate-3')
-    instantDonate.innerText = donateMoney
+    document.getElementById('instant-donate-3').innerText = historyAmount
 
     // current time
     const currentTimeElement = document.getElementById('current-time-3')
